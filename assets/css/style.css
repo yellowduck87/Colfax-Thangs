@@ -420,6 +420,10 @@ p {
 
 .lose {
     background: black;
+    position: absolute;
+    align-content: center;
+    left: 0;
+    right:0;
 }
 
 .bButt {
@@ -455,19 +459,14 @@ p {
     text-align: center;
 }
 
-.game-over {
-    font-size: 45px;
-    color: rgb(158, 16, 6);
-    text-align: center;
-}
 
 .play-again {
-    position: fixed;
-    left: 470px;
+    margin: 20px auto;
     background-color: black;
     font-size: 30px;
     color: rgb(158, 16, 6);
     border-color: rgb(158, 16, 6);
+    
 }
 
 .play-again:hover,
@@ -476,17 +475,6 @@ p {
     border-color: black;
     align-self: center;
 }
-
-/* #done-reading{
-    position: relative;
-    top: 70px;
-   left: 680px;
-    background-color: black;
-    font-size: 30px;
-    color: rgb(158, 16, 6);
-    border-color: rgb(158, 16, 6);
-
-} */
 
 .end-still {
     width: 500px;
@@ -497,16 +485,12 @@ p {
 }
 
 h4 {
-    position: relative;
-    top: 30px;
-    left: 520px;
-    color: rgb(158, 16, 6);
-    width: 500px;
-    height: 100px;
+     color: rgb(158, 16, 6);
     font-size: 25px;
     font-weight: bold;
     text-align: center;
     margin-bottom: 25px;
+    margin-top: 25px;
 }
 
 .sidekick {
@@ -517,9 +501,8 @@ h4 {
     width: 300px;
     background: #333333;
     color: white;
-    position: relative;
-    left: 630px;
-    top: 0px
+    margin: 10px auto;
+  
 }
 
 .form-control,
@@ -529,4 +512,11 @@ h4 {
     border: white solid 1px;
 }
 
-/* megan's styling */
+.min {
+    width: 900px;
+    height: 500px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 10px auto;
+}

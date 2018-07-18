@@ -79,20 +79,17 @@ $(document).ready(function () {
     function instr() {
         insideMode = true;
         $("#gameId").hide();
-        var instructions = $("<div>");
-        instructions.addClass("instruct");
-        instructions.html("<h4>Something ... strange is happening on Colfax tonight. You should investigate before you meet your firends at the civic center.</h4><h4> Hop in you car and use the W, A, S, and D keys or your arrow keys to navigate, and use the mouse to inspect suspicious or interesting things on the street.</h4><h4>Enter in your alias, and push 'I am ready'</h4>");
-
-        var input = $("<div>");
-        input.html('<div class="input-group input-group-lg">' +
+        // var instructions = $("<div>");
+        // instructions.addClass("instruct");
+        $(".min").html("<h4>Something ... strange is happening on Colfax tonight. You should investigate before you meet your firends at the civic center.</h4><h4> Hop in you car and use the W, A, S, and D keys or your arrow keys to navigate, and use the mouse to inspect suspicious or interesting things on the street.</h4><h4>Enter in your alias, and push 'I am ready'</h4>" + '<div class="input-group input-group-lg">' +
                     '<button class="input-group-text done-reading" id="inputGroup-sizing-lg">' + "I am Ready" + '</button>' +
                     '<input type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm">' +
                     '</div>');
 
         // instructions.append(readInstructions);
-        instructions.append(input);
+        // $(".min").append(input);
 
-        $(".min").append(instructions);
+        // $(".min").append(instructions);
     }
 
     instr();
