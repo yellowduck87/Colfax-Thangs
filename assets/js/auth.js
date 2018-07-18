@@ -38,7 +38,7 @@ $(document).ready(function () {
 
     ui.start('#firebaseui-auth-container', {
         signInOptions: [
-            firebase.auth.EmailAuthProvider.PROVIDER_ID,
+            // firebase.auth.EmailAuthProvider.PROVIDER_ID,
             firebase.auth.GoogleAuthProvider.PROVIDER_ID,
         ],
     });
@@ -56,7 +56,7 @@ $(document).ready(function () {
         signInSuccessUrl: 'index1.html',
         signInOptions: [
             firebase.auth.GoogleAuthProvider.PROVIDER_ID,
-            firebase.auth.EmailAuthProvider.PROVIDER_ID,
+            // firebase.auth.EmailAuthProvider.PROVIDER_ID,
         ],
         // Terms of service url.
         tosUrl: "terms.html",
@@ -125,7 +125,7 @@ $(document).ready(function () {
             openGif.attr("src", "assets/images/colfax_thangs_static.gif");
             $("#skip").hide();
             $("#gif-div").append(buttDiv);
-        }, 12500);
+        }, 13500);
     }
 
 
