@@ -1,0 +1,532 @@
+.game-container {
+    max-width: 900px;
+    height: 500px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-image: url("../images/p1-street1-bg.png");
+    background-repeat: no-repeat;
+}
+
+.game-container1 {
+    width: 900px;
+    height: 500px;
+    background-image: url("../images/p1-street2-bg.png");
+    background-repeat: no-repeat;
+}
+
+.game-container2 {
+    width: 900px;
+    height: 500px;
+    background-image: url("../images/p1-ogden-bg.png");
+    background-repeat: no-repeat;
+}
+
+.game-container3 {
+    width: 900px;
+    height: 500px;
+    background-image: url("../images/p1-street4-bg.png");
+    background-repeat: no-repeat;
+}
+
+.game-container4 {
+    width: 900px;
+    height: 500px;
+    background-image: url("../images/p1-street5-bg.png");
+    background-repeat: no-repeat;
+}
+
+.game-container5 {
+    width: 900px;
+    height: 500px;
+    background-image: url("../images/p1-charlies-bg.png");
+    background-repeat: no-repeat;
+}
+
+.game-container6 {
+    width: 900px;
+    height: 500px;
+    background-image: url("../images/p1-street7-bg.png");
+    background-repeat: no-repeat;
+}
+
+.game-container7 {
+    width: 900px;
+    height: 500px;
+    background-image: url("../images/p1-street8-bg.png");
+    background-repeat: no-repeat;
+}
+
+.game-container8 {
+    width: 900px;
+    height: 500px;
+    background-image: url("../images/p1-petes-bg.png");
+    background-repeat: no-repeat;
+}
+
+.game-container9 {
+    width: 900px;
+    height: 500px;
+    background-image: url("../images/p1-street10-bg.png");
+    background-repeat: no-repeat;
+}
+
+.game-container10 {
+    width: 900px;
+    height: 500px;
+    background-image: url("../images/p1-street11-bg.png");
+    background-repeat: no-repeat;
+}
+
+.game-container11 {
+    width: 900px;
+    height: 500px;
+    background-image: url("../images/p1-boss-bg.png");
+    background-repeat: no-repeat;
+}
+
+.car {
+    position: relative;
+    width: 80px;
+    height: 60px;
+}
+
+.carUpDown {
+    position: relative;
+    width: 50px;
+    height: 60px;
+}
+
+.carTurning {
+    position: relative;
+    width: 80px;
+    height: 60px;
+}
+
+.trash {
+    position: absolute;
+    width: 20px;
+    height: 30px;
+}
+
+.trashOpened {
+    position: absolute;
+    width: 50px;
+    height: 25px;
+}
+
+#door {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+}
+
+.rectangle {
+    height: 150px;
+    width: 300px;
+    background-color: rgba(255, 0, 0, 0);
+}
+
+.rectangle:hover {
+    border: solid 2px red;
+}
+
+#playerStats {
+    border: 2px solid black;
+    background: #333333;
+}
+
+/*Styling user interaction payne */
+
+.interactions {
+    background: black;
+    color: rgb(226, 223, 223);
+    border: 5px solid rgb(219, 145, 60);
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.interactions0 {
+    background-image: url("../images/p1-ogden-inside-bg.jpg");
+    width: 900px;
+    height: 500px;
+}
+
+.interactions1 {
+    background-image: url("../images/p1-charlies-inside-bg.png");
+    width: 900px;
+    height: 500px;
+}
+
+.interactions2 {
+    background-image: url("../images/petesKitchen.jpg");
+    width: 900px;
+    height: 500px;
+}
+
+#scenarioRow {
+    border-bottom: solid 8px rgb(219, 145, 60);
+}
+
+#userInteraction {
+    border-right: 3px outset rgb(219, 145, 60);
+}
+
+.userChoices {
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(219, 145, 60);
+    padding: 5px;
+    margin: 5px;
+}
+
+.thisChoice:hover {
+    background-color: rgb(184, 184, 184);
+    color: rgb(197, 8, 197);
+    cursor: pointer;
+}
+
+.thisChoice {
+    padding: 2px 6px 2px 6px;
+    border-top: 1px solid #CCCCCC;
+    border-right: 1px solid #333333;
+    border-bottom: 1px solid #333333;
+    border-left: 1px solid #CCCCCC;
+    border-radius: 8px;
+    margin: 5px;
+}
+
+/*Styling the gamePlay panel*/
+
+.gamePlay {
+    background: black;
+    color: white;
+    border: 2px solid rgb(219, 145, 60);
+    border-radius: 2px;
+}
+
+.userStuff {
+    top: 530px;
+    left: 210px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: #333333;
+    margin-bottom: 20px;
+}
+
+/*Styling sidekick function */
+
+.sidekickChoice {
+    height: 200px;
+    width: 200px;
+    border: 50 px solid black;
+    float: right;
+}
+
+.item {
+    width: 100px;
+    margin: 10px 5px;
+    height: auto;
+    float: left;
+}
+
+/* megan's styling */
+
+body {
+    background: black;
+    color: rgb(212, 212, 212);
+}
+
+#gif-div {
+    margin-left: 225px;
+    margin-top: 50px;
+}
+
+.mystery {
+    color: rgb(15, 2, 2);
+    background: black;
+    border: solid 1px rgb(39, 7, 7);
+    font-size: 300px;
+    width: 500px;
+    height: 500px;
+    margin: 150px auto 100px 500px;
+}
+
+.mystery:hover {
+    color: red;
+    border-color: red;
+    background-color: rgb(58, 11, 11);
+    transition: color .25s ease-in-out, background-color .25s ease-in-out, border-color .25s ease-in-out, box-shadow .25s ease-in-out;
+}
+
+.thangsIntro {
+    width: 1070px;
+    height: 600px;
+}
+
+.thangsOutro {
+    width: 900px;
+    height: 500px;
+}
+
+#play-game {
+    position: fixed;
+    margin-left: 470px;
+    bottom: 150px;
+    background-color: black;
+    font-size: 30px;
+    color: rgb(158, 16, 6);
+    border-color: rgb(158, 16, 6);
+}
+
+#skip,
+#skip-auth {
+    background-color: black;
+    font-size: 30px;
+    color: rgb(158, 16, 6);
+    border-color: rgb(158, 16, 6);
+    margin-left: 10px;
+}
+
+#title-plate {
+    color: rgb(158, 16, 6);
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+#skip-auth {
+    position: relative;
+    margin: 720px;
+    bottom: 720px;
+}
+
+.boss-container {
+    width: 900px;
+    height: 500px;
+    background-color: black;
+    background-image: url("../images/p1-boss-bg.png");
+    border: solid rgb(124, 5, 5) 2px;
+}
+
+.card {
+    width: 120px;
+}
+
+.player-card {
+    height: 250px;
+    width: 130px;
+    color: white;
+    border: rgb(100, 11, 11) solid 4px;
+    background: black;
+    margin: 20px;
+    padding: 3px;
+    position: relative;
+    top: 205px;
+    right: 530px;
+    text-align: center;
+}
+
+.attack {
+    background-color: red;
+    color: white;
+    border-color: red;
+    box-shadow: lightcoral;
+}
+
+.dis {
+    background-color: gray;
+    border-color: black;
+}
+
+.attack:hover {
+    background-color: rgb(61, 5, 5);
+    border-color: black;
+}
+
+.dis:hover {
+    background-color: gray;
+    border-color: black;
+}
+
+.btn-success {
+    margin: 5px;
+    background: black;
+    border: rgb(158, 16, 6) solid 3px;
+    color: rgb(158, 16, 6);
+    position: relative;
+    top: 200px;
+    left: 290px;
+    font-size: 50px;
+}
+
+.btn-success:hover {
+    background: rgb(61, 5, 5);
+    border: black solid 3px;
+    color: rgb(158, 16, 6);
+}
+
+#invent {
+    clear: both;
+}
+
+.img-thumbnail {
+    width: 100px;
+    height: 100px;
+    margin: 5px 2px;
+}
+
+.imgItems {
+    width: 90px;
+    height: 90px;
+}
+
+p {
+    margin-bottom: 2px;
+}
+
+.no-pad {
+    margin-bottom: 1px;
+}
+
+#boss-stat-card {
+    /* float: right; */
+    text-align: center;
+    color: white;
+    border: rgb(100, 11, 11) solid 4px;
+    background: black;
+    margin: 20px;
+    padding: 3px;
+    position: relative;
+    bottom: 450px;
+    left: 700px;
+    height: 100px;
+    /* left: 560px;  */
+    width: 150px;
+}
+
+.boss-image {
+    position: relative;
+    height: 450px;
+    top: 46px;
+    left: 350px;
+    /* opacity: 0.0; */
+    display: none;
+}
+
+.lose {
+    background: black;
+}
+
+.bButt {
+    font-size: 50px;
+    color: rgb(158, 16, 6);
+    position: relative;
+    top: 200px;
+    left: 50px;
+    background: black;
+    border: rgb(158, 16, 6) solid 3px;
+}
+
+.bButt:hover {
+    border: black solid 2px;
+    color: black;
+    background: rgb(61, 5, 5);
+}
+
+#boss-story {
+    font-size: 20px;
+    position: relative;
+    top: 100px;
+}
+
+#boss-stat-card,
+.player-card {
+    display: none;
+}
+
+#game-over {
+    font-size: 50px;
+    color: rgb(158, 16, 6);
+    text-align: center;
+}
+
+.game-over {
+    font-size: 45px;
+    color: rgb(158, 16, 6);
+    text-align: center;
+}
+
+.play-again {
+    position: fixed;
+    left: 470px;
+    background-color: black;
+    font-size: 30px;
+    color: rgb(158, 16, 6);
+    border-color: rgb(158, 16, 6);
+}
+
+.play-again:hover,
+    {
+    background-color: rgb(61, 5, 5);
+    border-color: black;
+    align-self: center;
+}
+
+/* #done-reading{
+    position: relative;
+    top: 70px;
+   left: 680px;
+    background-color: black;
+    font-size: 30px;
+    color: rgb(158, 16, 6);
+    border-color: rgb(158, 16, 6);
+
+} */
+
+.end-still {
+    width: 500px;
+    height: 300px;
+    position: relative;
+    left: 220px;
+    top: 100px;
+}
+
+h4 {
+    position: relative;
+    top: 30px;
+    left: 520px;
+    color: rgb(158, 16, 6);
+    width: 500px;
+    height: 100px;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.sidekick {
+    display: none;
+}
+
+.input-group {
+    width: 300px;
+    background: #333333;
+    color: white;
+    position: relative;
+    left: 630px;
+    top: 0px
+}
+
+.form-control,
+.input-group-text {
+    background: #333333;
+    color: white;
+    border: white solid 1px;
+}
+
+/* megan's styling */

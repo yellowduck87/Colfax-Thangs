@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--Reset-->
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+    <!--CSS-->
+    <script src="https://cdn.firebase.com/libs/firebaseui/2.5.1/firebaseui.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/2.5.1/firebaseui.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+
+    <title>Colfax Thangs</title>
+</head>
+
+<body>
+
+
+    <!-- users stats -->
+
+    <container id="game">
+
+        <div id="playerStats" class="container">
+
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="text-center" id="health"></div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="text-center" id="highScore"></div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="text-center" id="score"></div>
+                </div>
+            </div>
+        </div>
+        <div class="min"></div>
+        <div id="gameId" class="container game-container">
+            <div class="gamePlay col-sm-9"></div>
+            <div id="buttonSpot" class="col-sm-3"></div>
+
+
+        </div>
+        <!-- tester button for firebase -->
+        <!-- <button class"btn play-again">Click me</button> -->
+
+        <div class="row">
+            <div class="container userStuff">
+
+
+                <div class="row" id="invent">
+                    <div class="col-md-6">
+                        <h6 class="text-center">Inventory</h6>
+                        <div class="inventory"></div>
+                    </div>
+                    <div class="col-md-6">
+                        <h6 class="text-center">Sidekits</h6>
+                        <div class="sidekick"></div>
+                    </div>
+                </div>
+                <div class="container interactions">
+                <div id="scenarioRow" class="row">
+                    <div class="col-sm-12">
+                        <div class="scenario"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div id="userInteraction" class="col-sm-12 col-md-6">
+                        <div class="question"></div>
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <div class="userChoices"></div>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+
+        </div>
+        </div>
+    </container>
+    <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src='https://code.responsivevoice.org/responsivevoice.js'></script>
+    <script src="assets/js/interaction1.js"></script>
+    <script src="assets/js/game.js"></script>
+    <script src="assets/js/auth.js"></script>
+</body>
+
+</html>
