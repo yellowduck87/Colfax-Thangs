@@ -33,7 +33,6 @@ function gainSidekick() {
         var kittenName = $("<p class='text-center'>" + kittens[arrNum] + "</p>");
         var apiImage = "https://robohash.org/" + kittens[arrNum] + "/?set=set4";
         sidekit.attr("src", apiImage).addClass("imgItems img-thumbnail");
-        // console.log(apiImage);
         displayDiv.addClass("item");
         displayDiv.append(sidekit).append(kittenName);
         $("#gameId").append(displayDiv);
@@ -41,7 +40,6 @@ function gainSidekick() {
 
         $(".sidekick").fadeIn(3000);
         kittens.splice(arrNum, 1);
-        // console.log(kittens);
 
         sideKittens.push(apiImage);
         responsiveVoice.speak("You've found a kitten! We'll name it after someone helpful.")
@@ -428,7 +426,6 @@ $(document).keydown(function (e) {
             }
 
             if (pos.left < 50) {
-                // console.log("pos.left<20 is working");
                 if (counter !== 0) {
                     $("#gameId").removeClass("game-container" + counter);
                     counter--;
@@ -480,32 +477,8 @@ $(document).keydown(function (e) {
                     car.css("top", "-=20px");
 
                     if (pos.top < 20) {
-                        insideMode = true;
-                        $("#gameId").empty();
-                        $("#gameId").removeClass("game-container" + counter);
-                        counter++;
-                        $("#gameId").addClass("game-container" + counter);
-
-                        var bossButton = $("<button>");
-                        bossButton.addClass("btn btn-danger bButt");
-                        bossButton.attr("id", "start-boss");
-                        bossButton.text("Fight!")
-
-                        var bossText = $("<div>");
-                        bossText.attr("id", "boss-story");
-                        bossText.addClass("boss-paragraph");
-                        bossText.text("Something rustles in the bushes...")
-                        setTimeout(function () {
-                            responsiveVoice.speak("Prepare to defnd yourself human!");
-                            bossText.text("Prepare to defend yourself Human!")
-                            bossText.append(bossButton);
-
-                        }, 3000)
-
-                        $(".game-container11").append(bossText);
-
+                        bossCheck();
                     }
-                    // console.log(car.position());
                 } else if (pos.top < 210) {
                     $(car).attr("data", "north").attr("src", "assets/images/p1-carUp.png").addClass("carUpDown").removeClass("carTurning");
                     car.css("top", "-=0px");
@@ -531,11 +504,9 @@ $(document).keydown(function (e) {
                 if (counter > progressTotal) {
                     progressTotal++;
                 }
-                // console.log("pos left " + pos.left);
                 trashCanGenerator();
                 doorGenerator();
-                // console.log("progress total "+progressTotal);
-                // console.log("counter " + counter);
+             
 
             }
             if ($(car).attr("data") === "north") {
