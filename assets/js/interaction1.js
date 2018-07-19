@@ -1,13 +1,13 @@
 $(document).ready(function () {
 
     var config = {
-        apiKey: "AIzaSyAW4oe-QFXhUeCMs3WmYzl0EQL_qFqngHE",
-        authDomain: "group-project-1-7ad35.firebaseapp.com",
-        databaseURL: "https://group-project-1-7ad35.firebaseio.com",
-        projectId: "group-project-1-7ad35",
-        storageBucket: "group-project-1-7ad35.appspot.com",
-        messagingSenderId: "571501272814"
-    };
+        apiKey: "AIzaSyDuAKpFyuIUqpJEN117-AaB4mR_K9SJHJ0",
+        authDomain: "colfax-thangs.firebaseapp.com",
+        databaseURL: "https://colfax-thangs.firebaseio.com",
+        projectId: "colfax-thangs",
+        storageBucket: "",
+        messagingSenderId: "74496005134"
+      };
 
     firebase.initializeApp(config);
         var database = firebase.database();
