@@ -134,7 +134,7 @@ $(document).ready(function () {
             openGif.attr("src", "assets/images/colfax_thangs_static.gif");
             $("#skip").hide();
             $(row2).append(playGame);
-        }, 13900);
+        }, 13650);
     }
 
 
