@@ -38,7 +38,7 @@ $(document).ready(function () {
 
     ui.start('#firebaseui-auth-container', {
         signInOptions: [
-            // firebase.auth.EmailAuthProvider.PROVIDER_ID,
+            firebase.auth.EmailAuthProvider.PROVIDER_ID,
             firebase.auth.GoogleAuthProvider.PROVIDER_ID,
         ],
     });
@@ -56,7 +56,7 @@ $(document).ready(function () {
         signInSuccessUrl: 'index1.html',
         signInOptions: [
             firebase.auth.GoogleAuthProvider.PROVIDER_ID,
-            // firebase.auth.EmailAuthProvider.PROVIDER_ID,
+            firebase.auth.EmailAuthProvider.PROVIDER_ID,
         ],
         // Terms of service url.
         tosUrl: "terms.html",
@@ -64,13 +64,17 @@ $(document).ready(function () {
     // The start method will wait until the DOM is loaded.
     ui.start('#firebaseui-auth-container', uiConfig);
 
+    var rowSkip = $("<div>")
+    rowSkip.addClass("row")
+
     var skipAuth = $("<button>");
     skipAuth.text("Skip");
     skipAuth.addClass("btn btn-danger");
     skipAuth.attr("id", "skip-auth")
+    rowSkip.append(skipAuth)
 
 
-    $("#auth").append(skipAuth)
+    $("#auth").append(rowSkip)
 
     $(document).on("click", "#skip-auth", function () {
         window.location = "index1.html";
@@ -96,19 +100,23 @@ $(document).ready(function () {
 
     //colfax thangs gif and begin button load
     function startPage() {
-        var buttDiv = $("<div>");
-        buttDiv.addClass("pButt");
+        var row1 = $("<div>")
+        row1.addClass("row");
+
+        var row2 = $("<div>");
+        row2.addClass("row")
 
         var skip = $("<button>");
         skip.addClass("btn btn-danger");
         skip.attr("id", "skip")
         skip.text("Skip")
+        row2.append(skip)
 
         var playGame = $("<button>");
         playGame.attr("id", "play-game");
         playGame.addClass("btn btn-danger");
         playGame.text("Begin?");
-        buttDiv.append(playGame)
+      
 
         var newSound = document.createElement("audio");
         newSound.src = "assets/sounds/theme.mp3";
@@ -117,15 +125,16 @@ $(document).ready(function () {
         var openGif = $("<img>");
         openGif.addClass("thangsIntro");
         openGif.attr("src", "assets/images/Colfax Thangs Open.gif");
+        row1.append(openGif)
 
-        $("#gif-div").append(openGif)
-        $("#gif-div").append(skip)
+        $("#gif-div").append(row1)
+        $("#gif-div").append(row2)
 
         setTimeout(function () {
             openGif.attr("src", "assets/images/colfax_thangs_static.gif");
             $("#skip").hide();
-            $("#gif-div").append(buttDiv);
-        }, 14200);
+            $(row2).append(playGame);
+        }, 13900);
     }
 
 

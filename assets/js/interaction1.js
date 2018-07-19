@@ -72,9 +72,13 @@ $(document).ready(function () {
     initializeDatabase();
 
     //play again button global variable
+    var rowAgain = $("<div>");
+    rowAgain.addClass("row")
+
     var playAgain = $("<button>");
     playAgain.addClass("btn btn-seconadry play-again");
     playAgain.text("Play Again?")
+    rowAgain.append(playAgain);
 
     function instr() {
         insideMode = true;
@@ -225,7 +229,7 @@ $(document).ready(function () {
 
         setInterval(function () {
             $("#gameId").html("<h1 class='game-over'> Congradulations!</h1><h1 class='game-over'> You won with a score of: " + playerScore + "</h1>")
-            $("#gameId").append(playAgain);
+            $("#gameId").append(rowAgain);
             $("#gameId").append(colfaxStill);
             setTimeout(function () {
                 $(".end-still").fadeIn(3000);
@@ -240,7 +244,7 @@ $(document).ready(function () {
         $(".boss-container").addClass("lose");
         $(".lose").removeClass("boss-container");
         $(".lose").html("<h1 id='game-over'> Game Over </h1>")
-        $(".lose").append(playAgain);
+        $(".lose").append(rowAgain);
         $("#health").text(playerInput + " HP: " + "0");
     }
 

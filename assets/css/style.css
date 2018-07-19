@@ -198,7 +198,6 @@
     margin: 5px;
 }
 
-/*Styling the gamePlay panel*/
 
 .gamePlay {
     background: black;
@@ -218,7 +217,6 @@
     margin-bottom: 20px;
 }
 
-/*Styling sidekick function */
 
 .sidekickChoice {
     height: 200px;
@@ -234,7 +232,6 @@
     float: left;
 }
 
-/* megan's styling */
 
 body {
     background: black;
@@ -242,18 +239,23 @@ body {
 }
 
 #gif-div {
-    margin-left: 225px;
-    margin-top: 50px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 10px auto;
 }
 
 .mystery {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 100px auto;
     color: rgb(15, 2, 2);
     background: black;
     border: solid 1px rgb(92, 16, 16);
     font-size: 300px;
     width: 500px;
     height: 500px;
-    margin: 150px auto 100px 500px;
 }
 
 .mystery:hover {
@@ -264,46 +266,76 @@ body {
 }
 
 .thangsIntro {
-    width: 1070px;
-    height: 600px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 10px auto;
+    width: 900px;
+    height: 500px;
 }
 
 .thangsOutro {
+    position: absolute;
+    left:0;
+    right:0;
+    margin: 10px auto;
     width: 900px;
     height: 500px;
 }
 
 #play-game {
-    position: fixed;
-    margin-left: 470px;
-    bottom: 150px;
+    position: relative;
+ 
+    margin: 510px auto 20px auto;
     background-color: black;
     font-size: 30px;
     color: rgb(158, 16, 6);
     border-color: rgb(158, 16, 6);
 }
 
-#skip,
-#skip-auth {
+#skip {
+    position: relative;
+    margin: 510px auto 20px auto;
     background-color: black;
     font-size: 30px;
     color: rgb(158, 16, 6);
     border-color: rgb(158, 16, 6);
-    margin-left: 10px;
+}
+
+
+.pButt{
+    position: relative;
+    margin: 10px auto;
 }
 
 #title-plate {
     color: rgb(158, 16, 6);
     font-size: 50px;
-    text-align: center;
-    margin-bottom: 0;
+    margin: 20px auto;
 }
+ #skip-auth {
+     position: relative;
+     margin: 20px auto;
+     background-color: black;
+     font-size: 30px;
+     color: rgb(158, 16, 6);
+     border-color: rgb(158, 16, 6);
+ }
 
-#skip-auth {
+ #firebaseui-auth-container{
     position: relative;
-    margin: 720px;
-    bottom: 720px;
-}
+    margin: 20px auto 20px;
+ }
+ 
+ #auth {
+     position: absolute;
+     right: 0;
+     left: 0;
+     margin: 10px auto;
+     width: 900px;
+     height: 500px  ;
+
+ }
 
 .boss-container {
     width: 900px;
@@ -461,7 +493,8 @@ p {
 
 
 .play-again {
-    margin: 20px auto;
+    position: relative;
+    margin: 20px auto 20px auto;
     background-color: black;
     font-size: 30px;
     color: rgb(158, 16, 6);
@@ -473,7 +506,6 @@ p {
     {
     background-color: rgb(61, 5, 5);
     border-color: black;
-    align-self: center;
 }
 
 .end-still {
