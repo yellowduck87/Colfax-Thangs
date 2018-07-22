@@ -485,7 +485,7 @@ p {
     display: none;
 }
 
-#game-over {
+.game-over {
     font-size: 50px;
     color: rgb(158, 16, 6);
     text-align: center;
@@ -512,8 +512,7 @@ p {
     width: 500px;
     height: 300px;
     position: relative;
-    left: 220px;
-    top: 100px;
+    margin: 20px auto 20px auto;
 }
 
 h4 {
